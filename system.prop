@@ -1,4 +1,4 @@
-# system.prop for SGH-T999
+# system.prop for SC-06D
 #
 
 rild.libpath=/system/lib/libril-qc-qmi-1.so

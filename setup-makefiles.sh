@@ -1,5 +1,5 @@
 VENDOR=samsung
-DEVICE=d2tmo
+DEVICE=d2dcm
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
