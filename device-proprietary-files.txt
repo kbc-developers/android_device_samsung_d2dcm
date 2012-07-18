@@ -1,1 +1,12 @@
 # Add device specific blobs here
+# wifi_dcm
+etc/wifi/nvram_mfg.txt_murata_b2
+etc/wifi/nvram_net.txt_murata_b2
+
+# emoji_dcm
+lib/libemoji_docomo.so
+
+
+
+
+
