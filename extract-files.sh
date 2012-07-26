@@ -47,12 +47,4 @@ for FILE in `egrep -v '(^#|^$)' ../d2-common/common-proprietary-files.txt`; do
   fi
 done
 
-# Copy SGH-T999 alsa.msm8960.so
-cp ./alsa.msm8960.so $BASE/lib/hw
-
-# Copy exfat modules
-mkdir -p $BASE/lib/modules
-cp ./exfat_fs.ko $BASE/lib/modules
-cp ./exfat_core.ko $BASE/lib/modules
-
 ./setup-makefiles.sh
