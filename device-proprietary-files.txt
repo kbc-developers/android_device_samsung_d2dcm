@@ -43,6 +43,7 @@ bin/broadcastProcessObserver
 bin/SDtvService
 bin/OneSegTsDemux
 bin/OneSegDsmcc
+bin/BMLEngineServer
 lib/libBroadcastProcObs.so
 lib/libOneSegfactorytest_jni.so
 lib/libPGL.so
