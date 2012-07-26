@@ -30,10 +30,6 @@ PRODUCT_COPY_FILES += \\
 EOF
 
 LINEEND=" \\"
-echo "	$OUTDIR/proprietary/lib/hw/alsa.msm8960.so:system/lib/hw/alsa.msm8960.so$LINEEND" >> $MAKEFILE
-echo "	$OUTDIR/proprietary/lib/modules/exfat_fs.ko:system/lib/modules/exfat_fs.ko$LINEEND" >> $MAKEFILE
-echo "	$OUTDIR/proprietary/lib/modules/exfat_core.ko:system/lib/modules/exfat_core.ko$LINEEND" >> $MAKEFILE
-
 COUNT=`wc -l device-proprietary-files.txt | awk {'print $1'}`
 DISM=`egrep -c '(^#|^$)' device-proprietary-files.txt`
 COUNT=`expr $COUNT - $DISM`
