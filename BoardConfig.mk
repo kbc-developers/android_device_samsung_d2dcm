@@ -30,12 +30,14 @@
 TARGET_OTA_ASSERT_DEVICE := d2dcm
 
 # Kernel
-TARGET_KERNEL_SOURCE        := kernel/samsung/d2
-TARGET_KERNEL_CONFIG        := cyanogen_d2dcm_defconfig
-BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom user_debug=31
-BOARD_KERNEL_BASE           := 0x80200000
-BOARD_FORCE_RAMDISK_ADDRESS := 0x81500000
-BOARD_KERNEL_PAGESIZE       := 2048
+#TARGET_KERNEL_SOURCE        := kernel/samsung/d2
+#TARGET_KERNEL_CONFIG        := cyanogen_d2_defconfig
+#BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom user_debug=31
+#BOARD_KERNEL_BASE           := 0x80200000
+#BOARD_FORCE_RAMDISK_ADDRESS := 0x81500000
+#BOARD_KERNEL_PAGESIZE       := 2048
+
+TARGET_PREBUILT_KERNEL := device/samsung/d2dcm/kernel
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
