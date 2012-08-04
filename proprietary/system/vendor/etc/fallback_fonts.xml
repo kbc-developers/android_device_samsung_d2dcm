@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<familyset>
+    <family order="0">
+        <fileset>
+            <file>MTLmr3m.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>truetypeEmoji.ttf</file>
+        </fileset>
+    </family>
+</familyset>

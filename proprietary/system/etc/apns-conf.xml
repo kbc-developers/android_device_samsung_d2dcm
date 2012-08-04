@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apns version="7">
+  <apn carrier="spモード"
+    apn="spmode.ne.jp"
+    mcc="440"
+    mnc="10"
+    type="default,supl"
+  />
+  <apn carrier="mopera U"
+    apn="mopera.net"
+    mcc="440"
+    mnc="10"
+    type="default,supl"
+  />
+  <apn carrier="open mopera U"
+    apn="open.mopera.net"
+    mcc="440"
+    mnc="10"
+    type="default,supl"
+  />
+  <apn carrier="mopera U 設定"
+    apn="0120.mopera.ne.jp"
+    mcc="440"
+    mnc="10"
+    type="default,supl"
+  />
+</apns>
