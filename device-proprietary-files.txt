@@ -7,6 +7,14 @@ etc/wifi/nvram_net.txt_murata_b2
 lib/modules/exfat_fs.ko
 lib/modules/exfat_core.ko
 
+# apn
+etc/apns-conf.xml
+
+# font
+vendor/etc/fallback_fonts.xml
+fonts/MTLmr3m.ttf
+fonts/truetypeEmoji.ttf
+
 # emoji_dcm
 lib/libemoji_docomo.so
 
@@ -115,5 +123,5 @@ framework/com.nextreaming.player.apps.jar
 framework/minimode.jar
 framework/secbroadcast.jar
 framework/sechardware.jar
-framework/framework2.jar
+framework/TvoutService.jar
 app/MobileTV_JPN.apk
