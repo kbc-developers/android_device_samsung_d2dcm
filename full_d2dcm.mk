@@ -25,6 +25,16 @@
 PRODUCT_PACKAGES := \
     Torch
 
+# d2dcm Ramdisk
+PRODUCT_COPY_FILES += \
+    device/samsung/d2dcm/ramdisk/lib/modules/exfat_core.ko:root/lib/modules/exfat_core.ko \
+    device/samsung/d2dcm/ramdisk/lib/modules/exfat_fs.ko:root/lib/modules/exfat_fs.ko \
+    device/samsung/d2dcm/ramdisk/init.emmc.rc:root/init.emmc.rc \
+    device/samsung/d2dcm/ramdisk/init.qcom.rc:root/init.qcom.rc \
+    device/samsung/d2dcm/ramdisk/init.rc:root/init.rc \
+    device/samsung/d2dcm/ramdisk/initlogo.rle:root/initlogo.rle \
+    device/samsung/d2dcm/ramdisk/ueventd.rc:root/ueventd.rc
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from d2dcm device

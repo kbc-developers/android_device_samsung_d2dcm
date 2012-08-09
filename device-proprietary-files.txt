@@ -3,10 +3,6 @@
 etc/wifi/nvram_mfg.txt_murata_b2
 etc/wifi/nvram_net.txt_murata_b2
 
-# exFAT
-lib/modules/exfat_fs.ko
-lib/modules/exfat_core.ko
-
 # apn
 etc/apns-conf.xml
 
