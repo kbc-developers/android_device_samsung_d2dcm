@@ -1,5 +1,5 @@
 VENDOR=samsung
-DEVICE=d2tmo
+DEVICE=d2dcm
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
@@ -34,7 +34,7 @@ COUNT=`wc -l device-proprietary-files.txt | awk {'print $1'}`
 DISM=`egrep -c '(^#|^$)' device-proprietary-files.txt`
 COUNT=`expr $COUNT - $DISM`
 for FILE in `egrep -v '(^#|^$)' device-proprietary-files.txt`; do
-  COUNT=`expr $COUNT - 1`
+  COUNT=`expr $COUNT`
   if [ $COUNT = "0" ]; then
     LINEEND=""
   fi

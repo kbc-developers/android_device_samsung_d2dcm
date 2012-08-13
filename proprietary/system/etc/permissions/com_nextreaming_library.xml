@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.nextreaming.player.apps" file="/system/framework/com.nextreaming.player.apps.jar"/>
+</permissions>

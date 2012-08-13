@@ -1,4 +1,4 @@
-# system.prop for SGH-T999
+# system.prop for SC-06D
 #
 
 rild.libpath=/system/lib/libril-qc-qmi-1.so
@@ -94,3 +94,4 @@ ro.hdmi.enable=true
 debug.sf.hw=1
 debug.composition.type=dyn
 ro.cwm.enable_key_repeat=true
+ro.config.libemoji=libemoji_docomo.so

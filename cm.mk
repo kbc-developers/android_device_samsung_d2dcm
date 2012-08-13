@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
+$(call inherit-product, device/samsung/d2dcm/full_d2dcm.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/gsm.mk)
@@ -9,10 +9,10 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2tmo TARGET_DEVICE=d2tmo BUILD_FINGERPRINT="d2tmo-user 4.0.4 IMM76D T999UVALEM release-keys" PRIVATE_BUILD_DESC="samsung/d2tmo/d2tmo:4.0.4/IMM76D/T999UVALEM:user/release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2om TARGET_DEVICE=d2dcm BUILD_FINGERPRINT="samsung/d2om/d2dcm:4.0.4/IMM76D/SC06DOMALG1:user/release-keys" PRIVATE_BUILD_DESC="d2om-user 4.0.4 IMM76D SC06DOMALG1 release-keys"
 
 TARGET_BOOTANIMATION_NAME := vertical-720x1280
 
-PRODUCT_NAME := cm_d2tmo
-PRODUCT_DEVICE := d2tmo
+PRODUCT_NAME := cm_d2dcm
+PRODUCT_DEVICE := d2dcm
 
