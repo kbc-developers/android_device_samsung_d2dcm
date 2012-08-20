@@ -25,6 +25,10 @@
 PRODUCT_PACKAGES := \
     Torch
 
+# d2dcm msm_snd_soc
+PRODUCT_COPY_FILES += \
+    device/samsung/d2dcm/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
+
 # d2dcm Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/ramdisk/lib/modules/exfat_core.ko:root/lib/modules/exfat_core.ko \

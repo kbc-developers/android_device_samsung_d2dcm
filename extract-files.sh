@@ -43,7 +43,7 @@ for FILE in `egrep -v '(^#|^$)' ../d2-common/common-proprietary-files.txt`; do
   if [ "$SRC" = "adb" ]; then
     adb pull /system/$FILE $BASE/$FILE
   else
-    cp $SRC/system/$FILE $BASE/$FILE
+    cp $SRC/common/$FILE $BASE/$FILE
   fi
 done
 

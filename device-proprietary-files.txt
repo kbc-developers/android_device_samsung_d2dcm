@@ -7,8 +7,6 @@ etc/wifi/nvram_net.txt_murata_b2
 etc/apns-conf.xml
 
 # font
-vendor/etc/fallback_fonts.xml
-fonts/MTLmr3m.ttf
 fonts/truetypeEmoji.ttf
 
 # emoji_dcm
@@ -121,6 +119,3 @@ framework/secbroadcast.jar
 framework/sechardware.jar
 framework/TvoutService.jar
 app/MobileTV_JPN.apk
-
-# junk
-lib/libv8.so
