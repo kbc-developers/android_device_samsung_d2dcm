@@ -7,5 +7,5 @@ WORK IN PROGRESS. WILL EAT YOUR CAT.
 Please add the repo of sc06d to local_manifest.xml
 
   <project name="kbc-developers/android_device_samsung_d2dcm" path="device/samsung/d2dcm" remote="github" revision="jellybean" />
-  <project name="kbc-developers/sc06d_kernel_ics" path="kernel/samsung/d2dcm" remote="github" revision="android-linux-3.0-master" />
+  <project name="kbc-developers/android_kernel_samsung_d2" path="kernel/samsung/d2dcm" remote="github" revision="jellybean" />
 
