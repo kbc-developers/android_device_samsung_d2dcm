@@ -122,10 +122,6 @@ on boot
     write /proc/sys/net/ipv6/conf/rmnet_sdio6/accept_ra 2
     write /proc/sys/net/ipv6/conf/rmnet_sdio7/accept_ra 2
 
-# docomo virus scan - set permission
-    chmod 0700 /system/etc/mcafee
-    chmod 0600 /system/etc/mcafee/mfescand.conf
-
 # FeliCa
     mkdir /efs/FeliCaLock 0777 system 9004
     chown 9004 9004 /efs/FeliCaLock/01
@@ -180,11 +176,6 @@ service servicemanager /system/bin/servicemanager
     onrestart restart surfaceflinger
     onrestart restart drm
 	onrestart restart TvoutService_C     
-
-# docomo virus scan - start daemon
-#service mfescand /system/bin/mfescand 
-#     class main
-#     socket mfescand stream 600 system system 
 
 # for felica
 service mfsc /system/bin/mfsc
