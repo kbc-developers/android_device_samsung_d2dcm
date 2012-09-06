@@ -21,10 +21,6 @@
 # lines, full and maguro, hence its name.
 #
  
-# Torch
-PRODUCT_PACKAGES := \
-    Torch
-
 # d2dcm msm_snd_soc
 PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
@@ -33,7 +29,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/ramdisk/lib/modules/exfat_core.ko:root/lib/modules/exfat_core.ko \
     device/samsung/d2dcm/ramdisk/lib/modules/exfat_fs.ko:root/lib/modules/exfat_fs.ko \
-    device/samsung/d2dcm/ramdisk/init.emmc.rc:root/init.emmc.rc \
+    device/samsung/d2dcm/ramdisk/init.target.rc:root/init.target.rc \
     device/samsung/d2dcm/ramdisk/init.qcom.rc:root/init.qcom.rc \
     device/samsung/d2dcm/ramdisk/init.rc:root/init.rc \
     device/samsung/d2dcm/ramdisk/initlogo.rle:root/initlogo.rle \
