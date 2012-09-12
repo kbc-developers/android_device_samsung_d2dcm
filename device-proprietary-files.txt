@@ -87,6 +87,7 @@ lib/lib_Samsung_Sound_Booster.so
 lib/libbroadcastForOneSeg_jni.so
 lib/libBML.so
 lib/libBMLJNI.so
+lib/libmedia.so
 etc/one-seg/BML.ttf
 etc/one-seg/bml.db
 etc/one-seg/bmlrom_0.wav
