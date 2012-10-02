@@ -73,6 +73,8 @@ loglevel 3
     mkdir /mnt/obb 0700 root system
     mount tmpfs tmpfs /mnt/obb mode=0755,gid=1000
 
+#@ext4sd_mkdir
+
     write /proc/sys/kernel/panic_on_oops 1
     write /proc/sys/kernel/hung_task_timeout_secs 0
     write /proc/cpu/alignment 4
@@ -115,6 +117,9 @@ loglevel 3
 # Allow everybody to read the xt_qtaguid resource tracking misc dev.
 # This is needed by any process that uses socket tagging.
     chmod 0644 /dev/xt_qtaguid
+
+# bootanimation wait one loop
+    setprop sys.bootanim_wait 1
 
 on fs
 # mount mtd partitions
@@ -277,6 +282,11 @@ on boot
     chown system system /sys/devices/system/cpu/cpufreq/interactive/boostpulse
     chown system system /sys/devices/system/cpu/cpufreq/interactive/input_boost
     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/input_boost
+
+    chown system system /sys/devices/system/cpu/cpufreq/sakuractive/boost_timeout
+    chmod 0660 /sys/devices/system/cpu/cpufreq/sakuractive/boost_timeout
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/boost_cpufreq
+    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/boost_cpufreq
 
     # Assume SMP uses shared cpufreq policy for all CPUs
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -458,8 +468,8 @@ service media /system/bin/mediaserver
 
 service bootanim /system/bin/bootanimation
     class main
-    user graphics
-    group graphics
+    user root
+    group root media
     disabled
     oneshot
 
