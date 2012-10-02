@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/ramdisk/lib/modules/exfat_core.ko:root/lib/modules/exfat_core.ko \
     device/samsung/d2dcm/ramdisk/lib/modules/exfat_fs.ko:root/lib/modules/exfat_fs.ko \
+    device/samsung/d2dcm/ramdisk/sbin/ext4sd:root/sbin/ext4sd \
     device/samsung/d2dcm/ramdisk/init.target.rc:root/init.target.rc \
     device/samsung/d2dcm/ramdisk/init.qcom.rc:root/init.qcom.rc \
     device/samsung/d2dcm/ramdisk/init.rc:root/init.rc \
