@@ -93,6 +93,12 @@ loglevel 3
 # This is needed by any process that uses socket tagging.
     chmod 0644 /dev/xt_qtaguid
 
+# bootanimation wait one loop
+    setprop sys.bootanim_wait 1
+
+# void swichable pair
+    setprop ro.vold.switchablepair "/storage/sdcard0,/storage/sdcard1"
+
 on fs
 # mount mtd partitions
     # Mount /system rw first to give the filesystem a chance to save a checkpoint
@@ -463,8 +469,8 @@ service media /system/bin/mediaserver
 
 service bootanim /system/bin/bootanimation
     class main
-    user graphics
-    group graphics
+    user root
+    group root graphics media system
     disabled
     oneshot
 
