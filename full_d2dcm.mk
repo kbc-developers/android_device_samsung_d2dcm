@@ -34,7 +34,8 @@ PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/ramdisk/init.qcom.rc:root/init.qcom.rc \
     device/samsung/d2dcm/ramdisk/init.rc:root/init.rc \
     device/samsung/d2dcm/ramdisk/initlogo.rle:root/initlogo.rle \
-    device/samsung/d2dcm/ramdisk/ueventd.rc:root/ueventd.rc
+    device/samsung/d2dcm/ramdisk/ueventd.rc:root/ueventd.rc \
+    device/samsung/d2dcm/ramdisk/init.prop.sh:root/init.prop.sh
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
