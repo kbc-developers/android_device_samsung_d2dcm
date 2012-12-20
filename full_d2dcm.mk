@@ -22,20 +22,19 @@
 #
  
 # d2dcm msm_snd_soc
-#PRODUCT_COPY_FILES += \
-#    device/samsung/d2dcm/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
+PRODUCT_COPY_FILES += \
+    device/samsung/d2dcm/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
 
 # d2dcm Ramdisk
-#PRODUCT_COPY_FILES += \
-#    device/samsung/d2dcm/ramdisk/lib/modules/exfat_core.ko:root/lib/modules/exfat_core.ko \
-#    device/samsung/d2dcm/ramdisk/lib/modules/exfat_fs.ko:root/lib/modules/exfat_fs.ko \
-#    device/samsung/d2dcm/ramdisk/sbin/ext4sd:root/sbin/ext4sd \
-#    device/samsung/d2dcm/ramdisk/init.target.rc:root/init.target.rc \
-#    device/samsung/d2dcm/ramdisk/init.qcom.rc:root/init.qcom.rc \
-#    device/samsung/d2dcm/ramdisk/init.rc:root/init.rc \
-#    device/samsung/d2dcm/ramdisk/initlogo.rle:root/initlogo.rle \
-#    device/samsung/d2dcm/ramdisk/ueventd.rc:root/ueventd.rc \
-#    device/samsung/d2dcm/ramdisk/init.prop.sh:root/init.prop.sh
+PRODUCT_COPY_FILES += \
+    device/samsung/d2dcm/ramdisk/sbin/ext4sd:root/sbin/ext4sd \
+    device/samsung/d2dcm/ramdisk/init.target.rc:root/init.target.rc \
+    device/samsung/d2dcm/ramdisk/init.qcom.rc:root/init.qcom.rc \
+    device/samsung/d2dcm/ramdisk/init.rc:root/init.rc \
+    device/samsung/d2dcm/ramdisk/initlogo.rle:root/initlogo.rle \
+    device/samsung/d2dcm/ramdisk/ueventd.rc:root/ueventd.rc \
+    device/samsung/d2dcm/ramdisk/init.qcom.early_boot.sh:root/init.qcom.early_boot.sh \
+    device/samsung/d2dcm/ramdisk/init.prop.sh:root/init.prop.sh
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
