@@ -21,11 +21,12 @@
 # lines, full and maguro, hence its name.
 #
  
-# d2dcm msm_snd_soc
+# d2dcm audio
 PRODUCT_COPY_FILES += \
-    device/samsung/d2dcm/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
+    device/samsung/d2dcm/audio/audio_policy.conf:system/etc/audio_policy.conf \
+    device/samsung/d2dcm/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
 
-# d2dcm Ramdisk
+# d2dcm ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/ramdisk/sbin/ext4sd:root/sbin/ext4sd \
     device/samsung/d2dcm/ramdisk/init.target.rc:root/init.target.rc \

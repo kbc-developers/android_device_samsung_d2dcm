@@ -1,7 +1,12 @@
 # Add device specific blobs here
+
 # wifi_dcm
 etc/wifi/nvram_mfg.txt_murata_b2
 etc/wifi/nvram_net.txt_murata_b2
+
+# ril
+lib/libril.so
+lib/libril-qc-qmi-1.so
 
 # apn
 etc/apns-conf.xml
@@ -38,19 +43,4 @@ etc/felica/money.png
 etc/felica/portal_icon.png
 etc/felica/toku.png
 etc/felica/train.png
-
-# extra
-bin/wiperiface_v02
-bin/quipc_igsn
-bin/quipc_main
-lib/hw/gps.default.so
-lib/libloc_eng.so
-lib/libloc_adapter.so
-lib/libgps.utils.so
-lib/libcurl.so
-lib/libbson.so
-lib/libquipc_os_api.so
-lib/libquipc_ulp_adapter.so
-lib/libwifiscanner.so
-
 
