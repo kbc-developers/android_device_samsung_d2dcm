@@ -4,10 +4,6 @@
 etc/wifi/nvram_mfg.txt_murata_b2
 etc/wifi/nvram_net.txt_murata_b2
 
-# ril
-lib/libril.so
-lib/libril-qc-qmi-1.so
-
 # apn
 etc/apns-conf.xml
 
