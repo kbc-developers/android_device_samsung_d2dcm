@@ -1,0 +1,39 @@
+on init
+    symlink /storage/sdcard1 /external_sd
+    symlink /storage/sdcard1 /mnt/external_sd
+
+on early-boot
+    exec /system/bin/sh /init.prop.sh
+
+on boot
+# FeliCa
+    mkdir /efs/FeliCaLock 0777 system 9004
+    chown 9004 9004 /efs/FeliCaLock/01
+    chmod 0666 /efs/FeliCaLock/01
+    chown 9004 9004 /efs/FeliCaLock/02
+    chmod 0666 /efs/FeliCaLock/02
+
+on fs
+    exec /system/bin/sh /system/etc/init.qcom.modem_links.sh
+    exec /sbin/felica_init.sh
+
+on post-fs-data
+    write /data/.cid.info murata
+    chown root root /data/.cid.info
+    chmod 0666 /data/.cid.info
+
+
+#@ext4sd_service
+
+# Felica
+service mfsc /system/bin/mfsc
+    class main
+    user root
+    group system
+    oneshot
+    
+service mfdp /system/bin/mfdp
+    class main
+    user root
+    group system
+    oneshot

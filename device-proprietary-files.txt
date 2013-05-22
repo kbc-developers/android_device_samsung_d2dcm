@@ -4,9 +4,6 @@
 etc/wifi/nvram_mfg.txt_murata_b2
 etc/wifi/nvram_net.txt_murata_b2
 
-# apn
-etc/apns-conf.xml
-
 # font
 fonts/truetypeEmoji.ttf
 
