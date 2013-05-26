@@ -33,5 +33,5 @@ TARGET_OTA_ASSERT_DEVICE := d2dcm
 TARGET_KERNEL_SOURCE        := kernel/samsung/d2dcm
 TARGET_KERNEL_CONFIG        := cyanogen_d2dcm_defconfig
 
-TARGET_BOARD_INFO_FILE ?= device/samsung/d2att/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/samsung/d2dcm/board-info.txt
 
