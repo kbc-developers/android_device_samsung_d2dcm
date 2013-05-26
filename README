@@ -3,9 +3,3 @@ Copyright 2012 - The CyanogenMod Project (Modded KBC)
 Device configuration for Samsung Galaxy S3 (ntt docomo model).
 
 WORK IN PROGRESS. WILL EAT YOUR CAT.
-
-Please add the repo of sc06d to local_manifest.xml
-
-  <project name="kbc-developers/android_device_samsung_d2dcm" path="device/samsung/d2dcm" remote="github" revision="cm-10.1" />
-  <project name="kbc-developers/android_kernel_samsung_d2dcm" path="kernel/samsung/d2dcm" remote="github" revision="kbc-aosp-jb-mr1" />
-
