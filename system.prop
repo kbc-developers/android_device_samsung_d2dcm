@@ -8,6 +8,7 @@ rild.libargs=-d /dev/smd0
 # MAX PROP NAME is 31 chars --|
 ro.telephony.ril_class=SamsungQualcommUiccRIL
 telephony.lteOnGsmDevice=1
+ro.telephony.default_network=9
 
 # docomo emoji
 ro.config.libemoji=libemoji_docomo.so
