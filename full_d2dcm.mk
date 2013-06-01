@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/ramdisk/sbin/ext4sd:root/sbin/ext4sd \
     device/samsung/d2dcm/ramdisk/sbin/felica_init.sh:root/sbin/felica_init.sh \
-    device/samsung/d2dcm/ramdisk/init.rc:root/init.rc \
     device/samsung/d2dcm/ramdisk/init.carrier.rc:root/init.carrier.rc \
     device/samsung/d2dcm/ramdisk/initlogo.rle:root/initlogo.rle \
     device/samsung/d2dcm/ramdisk/ueventd.rc:root/ueventd.rc \
