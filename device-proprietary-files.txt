@@ -36,3 +36,6 @@ etc/felica/money.png
 etc/felica/portal_icon.png
 etc/felica/toku.png
 etc/felica/train.png
+
+# extra
+app/WAPPushManager.apk
