@@ -39,3 +39,5 @@ etc/felica/train.png
 
 # extra
 app/WAPPushManager.apk
+app/SPModePushNotifier.apk
+
