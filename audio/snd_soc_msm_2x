@@ -2800,7 +2800,7 @@ SectionDevice
 		'LINEOUT2 Volume':1:100%
 		'LINEOUT3 Volume':1:100%
 		'LINEOUT4 Volume':1:100%
-		'RX5 Digital Volume':1:76%
+		'RX5 Digital Volume':1:65%
 	EndSequence
 
 	DisableSequence
@@ -3541,7 +3541,7 @@ SectionDevice
 	EndSequence
 
 	ACDBID	52:2
-
+	
 EndSection
 
 SectionDevice
@@ -3572,7 +3572,7 @@ SectionDevice
 	EndSequence
 
 	ACDBID	55:2
-
+	
 EndSection
 
 SectionDevice
