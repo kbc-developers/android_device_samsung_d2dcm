@@ -2714,6 +2714,30 @@ SectionDevice
 EndSection
 
 SectionDevice
+    Name "VOIP Earpiece"
+    Comment "Handset Rx device for VOIP call"
+
+    EnableSequence
+        'SLIM_0_RX Channels':0:One
+        'RX1 MIX1 INP1':0:RX1
+        'EAR PA Gain':0:POS_6_DB
+        'DAC1 Switch':1:1
+        'RX1 Digital Volume':1:69%
+    EndSequence
+
+    DisableSequence
+        'RX1 MIX1 INP1':0:ZERO
+        'DAC1 Switch':1:0
+        'EAR PA Gain':0:ZERO
+        'RX1 Digital Volume':1:0
+    EndSequence
+
+    ACDBID  7:1
+    EffectsMixerCTL "SRS TruMedia"
+
+EndSection
+
+SectionDevice
 	Name "Voice Earpiece Extra Gain"
 	Comment "Handset Rx device for voice call with extra gain"
 
@@ -2851,6 +2875,36 @@ SectionDevice
 
 EndSection
 
+SectionDevice
+    Name "VOIP Speaker"
+    Comment "VoIP Comm Speaker Rx device"
+
+    EnableSequence
+	'SLIM_0_RX Channels':0:Two
+	'RX3 MIX1 INP1':0:RX1
+	'RX5 MIX1 INP1':0:RX1
+	'RX5 MIX1 INP2':0:RX2
+	'RX4 DSM MUX':0:DSM_INV
+	'RX6 DSM MUX':0:DSM_INV
+	'LINEOUT2 Volume':1:100%
+	'LINEOUT3 Volume':1:100%
+	'LINEOUT4 Volume':1:100%
+	'RX5 Digital Volume':2:67.7%
+	EndSequence
+
+    DisableSequence
+	'RX3 MIX1 INP1':0:ZERO
+	'RX5 MIX1 INP1':0:ZERO
+	'RX5 MIX1 INP2':0:ZERO
+	'LINEOUT2 Volume':1:0
+	'LINEOUT3 Volume':1:0
+	'LINEOUT4 Volume':1:0
+	'RX5 Digital Volume':1:0
+    EndSequence
+
+    ACDBID	15:1
+
+EndSection
 
 SectionDevice
     Name "Sub Mic"
