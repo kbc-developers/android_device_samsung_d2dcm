@@ -24,13 +24,15 @@
 -include device/samsung/d2-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/d2att/BoardConfigVendor.mk
+-include vendor/samsung/d2dcm/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := d2att
+TARGET_OTA_ASSERT_DEVICE := d2dcm
 
 # Kernel
-TARGET_KERNEL_CONFIG		:= cyanogen_d2att_defconfig
+TARGET_KERNEL_SOURCE        := kernel/samsung/d2dcm
+TARGET_KERNEL_VARIANT_CONFIG := cyanogen_d2_variant_defconfig
+TARGET_KERNEL_CONFIG        := cyanogen_d2dcm_defconfig
 
-TARGET_BOARD_INFO_FILE ?= device/samsung/d2att/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/samsung/d2dcm/board-info.txt
 

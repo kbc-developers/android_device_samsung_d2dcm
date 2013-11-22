@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/d2att/full_d2att.mk)
+$(call inherit-product, device/samsung/d2dcm/full_d2dcm.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
@@ -7,11 +7,11 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=d2uc \
-    TARGET_DEVICE=d2att \
-    BUILD_FINGERPRINT="samsung/d2uc/d2att:4.1.2/JZO54K/I747UCDMG2:user/release-keys" \
-    PRIVATE_BUILD_DESC="d2uc-user 4.1.2 JZO54K I747UCDMG2 release-keys"
+    PRODUCT_NAME=d2om \
+    TARGET_DEVICE=d2dcm \
+    BUILD_FINGERPRINT="samsung/d2om/d2dcm:4.1.2/JZO54K/SC06DOMBMF1:user/release-keys" \
+    PRIVATE_BUILD_DESC="d2om-user 4.1.2 JZO54K SC06DOMBMF1 release-keys"
 
-PRODUCT_NAME := cm_d2att
-PRODUCT_DEVICE := d2att
+PRODUCT_NAME := cm_d2dcm
+PRODUCT_DEVICE := d2dcm
 
