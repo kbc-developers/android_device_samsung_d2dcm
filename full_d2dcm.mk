@@ -32,6 +32,11 @@ PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/ramdisk/init.qcom.early_boot.sh:root/init.qcom.early_boot.sh \
     device/samsung/d2dcm/ramdisk/init.prop.sh:root/init.prop.sh
 
+# Default Locale
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.locale.language=ja \
+    ro.product.locale.region=JP
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from d2dcm device
