@@ -25,6 +25,13 @@
 PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
 
+# d2dcm ramdisk
+PRODUCT_COPY_FILES += \
+    device/samsung/d2dcm/ramdisk/sbin/felica_init.sh:root/sbin/felica_init.sh \
+    device/samsung/d2dcm/ramdisk/init.carrier.rc:root/init.carrier.rc \
+    device/samsung/d2dcm/ramdisk/init.qcom.early_boot.sh:root/init.qcom.early_boot.sh \
+    device/samsung/d2dcm/ramdisk/init.prop.sh:root/init.prop.sh
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from d2dcm device
