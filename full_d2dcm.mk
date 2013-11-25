@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/d2dcm/ramdisk/sbin/felica_init.sh:root/sbin/felica_init.sh \
     device/samsung/d2dcm/ramdisk/init.carrier.rc:root/init.carrier.rc \
+    device/samsung/d2dcm/ramdisk/ueventd.qcom.rc:root/ueventd.qcom.rc \
     device/samsung/d2dcm/ramdisk/init.qcom.early_boot.sh:root/init.qcom.early_boot.sh \
     device/samsung/d2dcm/ramdisk/init.prop.sh:root/init.prop.sh
 
