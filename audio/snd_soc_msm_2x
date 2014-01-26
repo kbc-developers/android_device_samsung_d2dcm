@@ -3680,9 +3680,11 @@ SectionDevice
         'SLIM TX7 MUX':0:DEC3
         'DEC3 MUX':0:ADC4
         'ADC4 Volume':1:100
+	'DEC3 Volume':1:85%
         'SLIM TX8 MUX':0:DEC4
         'DEC4 MUX':0:ADC3
         'ADC3 Volume':1:100
+	'DEC4 Volume':1:85%
         'MICBIAS1 CAPLESS Switch':1:1
     EndSequence
 
@@ -3690,9 +3692,11 @@ SectionDevice
         'SLIM TX7 MUX':0:ZERO
         'DEC3 MUX':0:ZERO
         'ADC4 Volume':1:0
+	'DEC3 Volume':1:67%
         'SLIM TX8 MUX':0:ZERO
         'DEC4 MUX':0:ZERO
         'ADC3 Volume':1:0
+	'DEC4 Volume':1:67%
         'MICBIAS1 CAPLESS Switch':1:0
     EndSequence
 
