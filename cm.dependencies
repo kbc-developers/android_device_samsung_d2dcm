@@ -16,7 +16,6 @@
     "target_path": "kernel/samsung/d2dcm"
   },
   {
-    "account": "aojp",
     "repository": "android_hardware_samsung",
     "target_path": "hardware/samsung"
   },
