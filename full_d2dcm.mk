@@ -21,14 +21,18 @@
 # lines, full and maguro, hence its name.
 #
  
+# d2dcm audio
+PRODUCT_COPY_FILES += \
+    device/samsung/d2dcm/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from d2att device
-$(call inherit-product, device/samsung/d2att/device.mk)
+# Inherit from d2dcm device
+$(call inherit-product, device/samsung/d2dcm/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_d2att
-PRODUCT_DEVICE := d2att
+PRODUCT_NAME := full_d2dcm
+PRODUCT_DEVICE := d2dcm
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SAMSUNG-SGH-I747
+PRODUCT_MODEL := SC-06D
