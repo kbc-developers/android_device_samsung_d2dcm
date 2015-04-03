@@ -1,11 +1,3 @@
-# Add device specific blobs here
-lib/libril.so
-lib/libsec-ril.so
-
-# wifi_dcm
-etc/wifi/nvram_mfg.txt_murata_b2
-etc/wifi/nvram_net.txt_murata_b2
-
 # font
 fonts/truetypeEmoji.ttf
 
@@ -24,7 +16,6 @@ app/FdtpApplication.apk
 app/FdtpMfcAccess.apk
 bin/mfdp
 bin/mfsc
-lib/libcordon.so
 etc/felica/No_ticket.png
 etc/felica/air.png
 etc/felica/bookmark.cfg
