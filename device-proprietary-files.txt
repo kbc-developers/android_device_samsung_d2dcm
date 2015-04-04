@@ -1,3 +1,7 @@
+# Add device specific blobs here
+lib/libril.so
+lib/libsec-ril.so
+
 # font
 fonts/truetypeEmoji.ttf
 
