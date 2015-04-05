@@ -26,6 +26,9 @@
 # inherit from the proprietary version
 -include vendor/samsung/d2dcm/BoardConfigVendor.mk
 
+# Linker
+BOARD_NO_CHECK_PIE_BINARY := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := d2dcm,d2lte
 
