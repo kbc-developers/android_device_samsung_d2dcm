@@ -32,5 +32,3 @@ BOARD_NO_CHECK_PIE_BINARY := true
 # Assert
 TARGET_OTA_ASSERT_DEVICE := d2dcm,d2lte
 
-TARGET_BOARD_INFO_FILE ?= device/samsung/d2dcm/board-info.txt
-
