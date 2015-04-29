@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
- 
+
 #
 # This file is the build configuration for a full Android
 # build for maguro hardware. This cleanly combines a set of
@@ -20,23 +20,10 @@
 # details, it only fundamentally contains two inherit-product
 # lines, full and maguro, hence its name.
 #
- 
-# d2dcm audio
-PRODUCT_COPY_FILES += \
-    device/samsung/d2dcm/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
-
-# d2dcm ramdisk
-PRODUCT_COPY_FILES += \
-    device/samsung/d2dcm/ramdisk/sbin/felica_init.sh:root/sbin/felica_init.sh \
-    device/samsung/d2dcm/ramdisk/init.carrier.rc:root/init.carrier.rc \
-    device/samsung/d2dcm/ramdisk/ueventd.qcom.rc:root/ueventd.qcom.rc \
-    device/samsung/d2dcm/ramdisk/init.qcom.early_boot.sh:root/init.qcom.early_boot.sh \
-    device/samsung/d2dcm/ramdisk/init.prop.sh:root/init.prop.sh
 
 # Default Locale
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.locale.language=ja \
-    ro.product.locale.region=JP
+	ro.product.locale.language=ja \
+	ro.product.locale.region=JP
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -48,4 +35,4 @@ PRODUCT_NAME := full_d2dcm
 PRODUCT_DEVICE := d2dcm
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SC-06D
+PRODUCT_MODEL := d2dcm
