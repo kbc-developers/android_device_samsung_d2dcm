@@ -26,7 +26,7 @@
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/d2dcm/include
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := d2dcm.d2lte
+TARGET_OTA_ASSERT_DEVICE := d2dcm,d2lte
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
