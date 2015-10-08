@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/d2att/full_d2att.mk)
+$(call inherit-product, device/samsung/d2dcm/full_d2dcm.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
