@@ -1,3 +1,40 @@
 # Add device specific blobs here
 lib/libril.so
 lib/libsec-ril.so
+
+# font
+fonts/truetypeEmoji.ttf
+
+# emoji_dcm
+lib/libemoji_docomo.so
+
+# Felica
+app/FeliCaLock.apk
+app/FeliCaRemoteLock.apk
+app/FeliCaTest.apk
+app/MobileFeliCaClient.apk
+app/MobileFeliCaMenuApp.apk
+app/MobileFeliCaSettingApp.apk
+app/MobileFeliCaWebPluginBoot.apk
+app/FdtpApplication.apk
+app/FdtpMfcAccess.apk
+bin/mfdp
+bin/mfsc
+etc/felica/No_ticket.png
+etc/felica/air.png
+etc/felica/bookmark.cfg
+etc/felica/common.cfg
+etc/felica/id.png
+etc/felica/mfc_falp.cfg
+etc/felica/mfc_push.cfg
+etc/felica/mfm.cfg
+etc/felica/mfs.cfg
+etc/felica/money.png
+etc/felica/portal_icon.png
+etc/felica/toku.png
+etc/felica/train.png
+
+# extra
+app/WAPPushManager.apk
+app/SPModePushNotifier.apk
+
