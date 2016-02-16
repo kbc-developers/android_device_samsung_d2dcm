@@ -26,6 +26,9 @@
 # inherit from the proprietary version
 -include vendor/samsung/d2dcm/BoardConfigVendor.mk
 
+# kernel
+TARGET_KERNEL_CONFIG        := cyanogen_d2dcm_defconfig
+
 # Linker
 BOARD_NO_CHECK_PIE_BINARY := true
 
