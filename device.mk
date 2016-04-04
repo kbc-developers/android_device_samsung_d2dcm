@@ -27,9 +27,8 @@ PRODUCT_PACKAGES += \
     init.carrier.rc \
     init.prop.sh
 
-# Mozc
-PRODUCT_PACKAGES += \
-    Mozc
+#AOJP Common
+$(call inherit-product-if-exists, vendor/aojp/config/aojp.mk)
 
 # Inherit from d2-common
 $(call inherit-product, device/samsung/d2-common/d2-common.mk)
